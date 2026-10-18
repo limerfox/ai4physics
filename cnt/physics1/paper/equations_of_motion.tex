@@ -1,0 +1,432 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\geometry{top=2cm,bottom=2cm,left=2.5cm,right=2.5cm}
+
+\title{Уравнение движения скалярного поля в произвольном пространстве-времени\\
+и его решение в expanding Poincar\'e patch de Sitter пространства}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Уравнение движения в произвольном пространстве-времени}
+
+\subsection{Действие для скалярного поля}
+
+Рассмотрим действительное скалярное поле $\phi(x)$ в произвольном псевдоримановом
+пространстве-времени $(\mathcal{M}, g_{\mu\nu})$ с сигнатурой $(-,+,+,+)$.
+Лагранжиан действия имеет вид:
+
+\begin{equation}
+S[\phi] = \int d^4x\,\sqrt{-g}\,\mathcal{L}(\phi, \partial_\mu\phi, g_{\mu\nu}),
+\end{equation}
+
+где $g = \det(g_{\mu\nu}) < 0$, а лагранжиан:
+
+\begin{equation}
+\mathcal{L} = -\frac{1}{2}\,g^{\mu\nu}\,\partial_\mu\phi\,\partial_\nu\phi \;-\; V(\phi).
+\end{equation}
+
+Здесь $V(\phi)$ — потенциал поля. Наиболее распространённый случай — свободное поле
+с массой $m$:
+
+\begin{equation}
+V(\phi) = \frac{1}{2}\,m^2\,\phi^2.
+\end{equation}
+
+\subsection{Вариационный вывод}
+
+Применяем принцип наименьшего действия $\delta S = 0$ при произвольных вариациях
+$\delta\phi$ с нулевыми граничными условиями.
+
+\textbf{Вариация кинетического члена:}
+
+\begin{align}
+\delta S_{\text{kin}} &= -\int d^4x\,\sqrt{-g}\; g^{\mu\nu}\,\partial_\mu\phi\,\partial_\nu(\delta\phi) \\
+&= \int d^4x\,\sqrt{-g}\;\Bigl[\nabla_\mu\bigl(g^{\mu\nu}\,\partial_\nu\phi\bigr)\Bigr]\,\delta\phi \\
+&= \int d^4x\,\sqrt{-g}\;\bigl(\Box\phi\bigr)\,\delta\phi,
+\end{align}
+
+где мы использовали интегрирование по частям и определение ковариантного
+д'Aламбиана:
+
+\begin{equation}
+\Box\phi = \nabla_\mu\nabla^\mu\phi = \frac{1}{\sqrt{-g}}\,\partial_\mu\Bigl(\sqrt{-g}\,g^{\mu\nu}\,\partial_\nu\phi\Bigr).
+\end{equation}
+
+\textbf{Вариация потенциала:}
+
+\begin{equation}
+\delta S_{\text{pot}} = -\int d^4x\,\sqrt{-g}\; V'(\phi)\,\delta\phi.
+\end{equation}
+
+\textbf{Уравнение Эйлера--Лагранжа:}
+
+\begin{equation}
+\delta S = \int d^4x\,\sqrt{-g}\;\Bigl[\Box\phi - V'(\phi)\Bigr]\,\delta\phi = 0.
+\end{equation}
+
+Поскольку $\delta\phi$ произвольно, получаем уравнение движения:
+
+\begin{equation}
+\boxed{\;\Box\phi - V'(\phi) = 0\;}
+\end{equation}
+
+или, в явном виде:
+
+\begin{equation}
+\boxed{\;\frac{1}{\sqrt{-g}}\,\partial_\mu\Bigl(\sqrt{-g}\,g^{\mu\nu}\,\partial_\nu\phi\Bigr) - V'(\phi) = 0\;}
+\end{equation}
+
+Для свободного поля $V(\phi) = \frac{1}{2}m^2\phi^2$:
+
+\begin{equation}
+\boxed{\;\Box\phi + m^2\phi = 0\;}
+\end{equation}
+
+Это уравнение Клейна--Гордона в произвольном пространстве-времени.
+
+\section{de Sitter пространство в Poincar\'e patch}
+
+\subsection{Метрика}
+
+de Sitter пространство — максимальное симметричное решение уравнений Эйнштейна
+с положительной космологической постоянной $\Lambda = 3H^2$.
+
+В координатах expanding Poincar\'e patch метрика записывается в конформном виде:
+
+\begin{equation}
+ds^2 = a(\eta)^2\,\bigl(-d\eta^2 + d\vec{x}^{\,2}\bigr),
+\end{equation}
+
+где $\eta \in (-\infty, 0)$ — конформное время, а масштабный фактор:
+
+\begin{equation}
+a(\eta) = -\frac{1}{H\eta}.
+\end{equation}
+
+В явном виде:
+
+\begin{equation}
+ds^2 = \frac{1}{(H\eta)^2}\,\bigl(-d\eta^2 + dx^2 + dy^2 + dz^2\bigr).
+\end{equation}
+
+\subsection{Геометрические величины}
+
+\textbf{Обратная метрика:}
+
+\begin{equation}
+g^{\mu\nu} = a(\eta)^{-2}\,\eta^{\mu\nu} = (H\eta)^2\,\eta^{\mu\nu},
+\end{equation}
+
+где $\eta^{\mu\nu} = \text{diag}(-1, +1, +1, +1)$.
+
+\textbf{Определитель метрики:}
+
+\begin{equation}
+g = \det(g_{\mu\nu}) = a(\eta)^8\,\det(\eta_{\mu\nu}) = -a(\eta)^8,
+\qquad \sqrt{-g} = a(\eta)^4.
+\end{equation}
+
+\textbf{Символы Кристоффеля:}
+
+Для конформно плоской метрики $g_{\mu\nu} = a^2\eta_{\mu\nu}$:
+
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} = \frac{1}{a}\Bigl(\delta^\lambda_\mu\,\partial_\nu a + \delta^\lambda_\nu\,\partial_\mu a - \eta_{\mu\nu}\,\eta^{\lambda\rho}\,\partial_\rho a\Bigr).
+\end{equation}
+
+Единственные ненулевые компоненты:
+
+\begin{align}
+\Gamma^0_{00} &= \frac{a'}{a}, \\
+\Gamma^0_{ij} &= \frac{a'}{a}\,\delta_{ij}, \\
+\Gamma^i_{0j} &= \frac{a'}{a}\,\delta^i_j,
+\end{align}
+
+где штрих обозначает производную по конформному времени $\eta$.
+
+Для $a(\eta) = -1/(H\eta)$:
+
+\begin{equation}
+\frac{a'}{a} = -\frac{1}{\eta}.
+\end{equation}
+
+\textbf{Вторые производные масштабного фактора:}
+
+\begin{equation}
+a' = \frac{1}{H\eta^2}, \qquad a'' = -\frac{2}{H\eta^3},
+\end{equation}
+
+откуда:
+
+\begin{equation}
+\frac{a''}{a} = \frac{2}{\eta^2}.
+\end{equation}
+
+\section{Уравнение движения в de Sitter пространстве}
+
+\subsection{Д'Aламбиан в конформных координатах}
+
+Подставляем в определение д'Aламбиана:
+
+\begin{align}
+\Box\phi &= \frac{1}{\sqrt{-g}}\,\partial_\mu\Bigl(\sqrt{-g}\,g^{\mu\nu}\,\partial_\nu\phi\Bigr) \\
+&= \frac{1}{a^4}\,\partial_\mu\Bigl(a^4\,a^{-2}\,\eta^{\mu\nu}\,\partial_\nu\phi\Bigr) \\
+&= \frac{1}{a^2}\,\eta^{\mu\nu}\,\partial_\mu\partial_\nu\phi + \frac{1}{a^2}\,\eta^{\mu\nu}\,(\partial_\mu\ln a^2)\,\partial_\nu\phi \\
+&= \frac{1}{a^2}\Bigl[-\partial_0^2\phi + \nabla^2\phi\Bigr] + \frac{2a'}{a^3}\,\partial_0\phi.
+\end{align}
+
+Умножая на $a^2$:
+
+\begin{equation}
+\Box\phi = \frac{1}{a^2}\Bigl[-\phi'' - 2\frac{a'}{a}\,\phi' + \nabla^2\phi\Bigr].
+\end{equation}
+
+\subsection{Уравнение Клейна--Гордона}
+
+Уравнение $\Box\phi + m^2\phi = 0$ принимает вид:
+
+\begin{equation}
+-\phi'' - 2\frac{a'}{a}\,\phi' + \nabla^2\phi - a^2m^2\phi = 0,
+\end{equation}
+
+или:
+
+\begin{equation}
+\boxed{\;\phi'' + 2\frac{a'}{a}\,\phi' - \nabla^2\phi + a^2m^2\phi = 0\;}
+\end{equation}
+
+Подставляя $a'/a = -1/\eta$ и $a = -1/(H\eta)$:
+
+\begin{equation}
+\boxed{\;\phi'' - \frac{2}{\eta}\,\phi' - \nabla^2\phi + \frac{m^2}{H^2\eta^2}\,\phi = 0\;}
+\end{equation}
+
+\subsection{Преобразование Мичнера}
+
+Вводим новое поле (переменная Мичнера):
+
+\begin{equation}
+v(\eta, \vec{x}) = a(\eta)\,\phi(\eta, \vec{x}) = -\frac{\phi(\eta, \vec{x})}{H\eta}.
+\end{equation}
+
+Вычисляем производные:
+
+\begin{align}
+v' &= a'\phi + a\phi', \\
+v'' &= a''\phi + 2a'\phi' + a\phi''.
+\end{align}
+
+Выражаем $\phi$ и его производные через $v$:
+
+\begin{align}
+\phi &= \frac{v}{a}, \\
+\phi' &= \frac{v'}{a} - \frac{a'}{a^2}\,v, \\
+\phi'' &= \frac{v''}{a} - 2\frac{a'}{a^2}\,v' + \Bigl(2\frac{(a')^2}{a^3} - \frac{a''}{a^2}\Bigr)\,v.
+\end{align}
+
+Подставляем в уравнение для $\phi$:
+
+\begin{align}
+\phi'' + 2\frac{a'}{a}\,\phi' - \nabla^2\phi + a^2m^2\phi &= 0 \\
+\frac{v''}{a} - 2\frac{a'}{a^2}\,v' + \Bigl(2\frac{(a')^2}{a^3} - \frac{a''}{a^2}\Bigr)v + 2\frac{a'}{a}\Bigl(\frac{v'}{a} - \frac{a'}{a^2}\,v\Bigr) - \nabla^2\frac{v}{a} + a^2m^2\frac{v}{a} &= 0.
+\end{align}
+
+Сокращаем члены с $v'$:
+
+\begin{equation}
+-2\frac{a'}{a^2}\,v' + 2\frac{a'}{a^2}\,v' = 0.
+\end{equation}
+
+Сокращаем члены с $v$:
+
+\begin{equation}
+2\frac{(a')^2}{a^3}\,v - \frac{a''}{a^2}\,v - 2\frac{(a')^2}{a^3}\,v = -\frac{a''}{a^2}\,v.
+\end{equation}
+
+Окончательно:
+
+\begin{equation}
+\frac{1}{a}\Bigl[v'' - \frac{a''}{a}\,v\Bigr] - \frac{1}{a}\,\nabla^2 v + a\,m^2\,v = 0.
+\end{equation}
+
+Умножая на $a$:
+
+\begin{equation}
+\boxed{\;v'' - \nabla^2 v - \frac{a''}{a}\,v + a^2m^2\,v = 0\;}
+\end{equation}
+
+Подставляя $a''/a = 2/\eta^2$ и $a^2 = 1/(H^2\eta^2)$:
+
+\begin{equation}
+\boxed{\;v'' - \nabla^2 v - \frac{2}{\eta^2}\,v + \frac{m^2}{H^2\eta^2}\,v = 0\;}
+\end{equation}
+
+\section{Решение уравнения}
+
+\subsection{Разложение по модам Фурье}
+
+Разлагаем поле по пространственным модам Фурье:
+
+\begin{equation}
+v(\eta, \vec{x}) = \int\frac{d^3k}{(2\pi)^{3/2}}\;\Bigl[v_k(\eta)\,e^{i\vec{k}\cdot\vec{x}} + v_k^*(\eta)\,e^{-i\vec{k}\cdot\vec{x}}\Bigr]\,\hat{a}_{\vec{k}}.
+\end{equation}
+
+Для каждой моды $v_k(\eta)$:
+
+\begin{equation}
+v_k'' + \Bigl(k^2 - \frac{2}{\eta^2} + \frac{m^2}{H^2\eta^2}\Bigr)\,v_k = 0,
+\end{equation}
+
+где $k = |\vec{k}|$.
+
+Объединяя члены с $1/\eta^2$:
+
+\begin{equation}
+v_k'' + \Bigl(k^2 - \frac{\nu^2 - \tfrac{1}{4}}{\eta^2}\Bigr)\,v_k = 0,
+\end{equation}
+
+где параметр $\nu$ определяется как:
+
+\begin{equation}
+\nu^2 = \frac{9}{4} - \frac{m^2}{H^2}.
+\end{equation}
+
+\subsection{Решение через функции Бесселя}
+
+Уравнение
+
+\begin{equation}
+v_k'' + \Bigl(k^2 - \frac{\nu^2 - \tfrac{1}{4}}{\eta^2}\Bigr)\,v_k = 0
+\end{equation}
+
+является уравнением Бесселя порядка $\nu$. Его общее решение:
+
+\begin{equation}
+v_k(\eta) = \sqrt{-\eta}\,\Bigl[C_1(k)\,H_\nu^{(1)}(-k\eta) + C_2(k)\,H_\nu^{(2)}(-k\eta)\Bigr],
+\end{equation}
+
+где $H_\nu^{(1,2)}$ — функции Ханкеля первого и второго рода.
+
+\subsection{Условие Буньяковского--Уолдена (Bunch--Davies vacuum)}
+
+В пределе раннего времени $|\eta| \to 0$ (или $k|\eta| \gg 1$) требуется, чтобы
+мода совпадала с вакуумом Минковского:
+
+\begin{equation}
+v_k(\eta) \xrightarrow[k|\eta|\gg 1]{} \frac{1}{\sqrt{2k}}\,e^{-ik\eta}.
+\end{equation}
+
+Используя асимптотику функций Ханкеля при большом аргументе:
+
+\begin{equation}
+H_\nu^{(1)}(z) \sim \sqrt{\frac{2}{\pi z}}\,e^{i(z - \frac{\pi\nu}{2} - \frac{\pi}{4})}, \qquad
+H_\nu^{(2)}(z) \sim \sqrt{\frac{2}{\pi z}}\,e^{-i(z - \frac{\pi\nu}{2} - \frac{\pi}{4})},
+\end{equation}
+
+получаем:
+
+\begin{equation}
+v_k(\eta) = \frac{\sqrt{\pi}}{2}\,e^{i\pi(\nu + \tfrac{1}{2})/2}\,\sqrt{-\eta}\,H_\nu^{(1)}(-k\eta).
+\end{equation}
+
+\subsection{Итоговое решение}
+
+\begin{equation}
+\boxed{\;v_k(\eta) = \frac{\sqrt{\pi}}{2}\,e^{i\frac{\pi}{2}(\nu + \frac{1}{2})}\,\sqrt{-\eta}\,H_\nu^{(1)}(-k\eta)\;}
+\end{equation}
+
+и, возвращаясь к полю $\phi$:
+
+\begin{equation}
+\boxed{\;\phi_k(\eta) = \frac{v_k(\eta)}{a(\eta)} = -\frac{H\eta\,\sqrt{\pi}}{2}\,e^{i\frac{\pi}{2}(\nu + \frac{1}{2})}\,\sqrt{-\eta}\,H_\nu^{(1)}(-k\eta)\;}
+\end{equation}
+
+\section{Асимптотики решения}
+
+\subsection{Подгоризонтные моды ($k|\eta| \ll 1$, раннее время)}
+
+Используем асимптотику $H_\nu^{(1)}(z)$ при $z \to \infty$:
+
+\begin{equation}
+\phi_k(\eta) \xrightarrow[k|\eta|\ll 1]{} \frac{H}{\sqrt{2k^3}}\,(-k\eta)^{3/2}\cdot\frac{\sqrt{\pi}}{2}\,e^{i\frac{\pi}{2}(\nu + \frac{1}{2})}\cdot\sqrt{\frac{2}{\pi k|\eta|}}\,e^{-ik\eta}
+\end{equation}
+
+\begin{equation}
+\phi_k(\eta) \xrightarrow[k|\eta|\ll 1]{} \frac{H}{\sqrt{2k^3}}\,(-k\eta)\cdot e^{-ik\eta + i\frac{\pi}{2}(\nu - \frac{1}{2})}.
+\end{equation}
+
+\textbf{Физический смысл:} На малых масштабах (раннее время) поле ведёт себя
+как в плоском пространстве Минковского — это подтверждает корректность
+выбора вакуума Буньяковского--Уолдена.
+
+\subsection{Надгоризонтные моды ($k|\eta| \gg 1$, позднее время)}
+
+Используем асимптотику $H_\nu^{(1)}(z)$ при $z \to 0$:
+
+\begin{equation}
+H_\nu^{(1)}(z) \sim -\frac{i}{\pi}\,\Gamma(\nu)\,\Bigl(\frac{z}{2}\Bigr)^{-\nu}, \qquad \text{Re}\,\nu > 0.
+\end{equation}
+
+Тогда:
+
+\begin{equation}
+\phi_k(\eta) \xrightarrow[k|\eta|\gg 1]{} -\frac{H}{\sqrt{2k^3}}\,\frac{\Gamma(\nu)}{\Gamma(\tfrac{3}{2})}\,\Bigl(\frac{k|\eta|}{2}\Bigr)^{\frac{3}{2}-\nu}.
+\end{equation}
+
+\textbf{Физический смысл:} На больших масштабах (позднее время) амплитуда
+моды «замораживается» (freezes out) и становится постоянной — это ключевой
+механизм генерации первичных возмущений в инфляционной космологии.
+
+\subsection{Случай безмассового поля ($m = 0$)}
+
+При $m = 0$ имеем $\nu = 3/2$. Функции Ханкеля полуцелого порядка выражаются
+через элементарные функции:
+
+\begin{equation}
+H_{3/2}^{(1)}(z) = -i\,\sqrt{\frac{2}{\pi z}}\,e^{iz}\,\Bigl(1 + \frac{i}{z}\Bigr).
+\end{equation}
+
+Тогда:
+
+\begin{equation}
+\phi_k(\eta) = \frac{H}{\sqrt{2k^3}}\,(1 - ik\eta)\,e^{-ik\eta}.
+\end{equation}
+
+\subsection{Случай конформно-инвариантного поля ($m^2 = \tfrac{2}{3}H^2$)}
+
+При $m^2 = \frac{2}{3}H^2$ имеем $\nu = 1$. Это соответствует конформно-инвариантному
+скалярному полю в de Sitter пространстве.
+
+\section{Проверка в Lean}
+
+Ниже приведены ключевые математические факты, верифицированные в Lean 4.
+
+\subsection*{Лемма 1: Производная масштабного фактора}
+
+\begin{equation}
+a(\eta) = -\frac{1}{H\eta} \implies a'(\eta) = \frac{1}{H\eta^2}, \quad a''(\eta) = -\frac{2}{H\eta^3}, \quad \frac{a''}{a} = \frac{2}{\eta^2}.
+\end{equation}
+
+\subsection*{Лемма 2: Тождество для преобразования Мичнера}
+
+\begin{equation}
+v = a\phi \implies v'' - \frac{a''}{a}\,v = a\Bigl(\phi'' + 2\frac{a'}{a}\,\phi'\Bigr).
+\end{equation}
+
+\subsection*{Лемма 3: Параметр $\nu$}
+
+\begin{equation}
+\nu^2 = \frac{9}{4} - \frac{m^2}{H^2}.
+\end{equation}
+
+\end{document}
