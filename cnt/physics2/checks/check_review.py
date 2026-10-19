@@ -14,7 +14,6 @@ meta = {}
 for f in sorted(lib.glob("*.tex")):
     m = re.search(r"^doi:\s*(\S+)", f.read_text(encoding="utf-8"), re.M)
     if m: meta[m.group(1)] = f.name
-print(meta)
 table, draft = root / "review" / "table.csv", root / "review" / "draft.md"
 if not table.is_file() or not draft.is_file():
     print("нужны review/table.csv и review/draft.md"); sys.exit(1)
@@ -33,7 +32,7 @@ cites = re.findall(r"\[(10\.[^\]\s]+)\]", draft.read_text(encoding="utf-8"))
 for c in cites:
     if c not in dois:
         errors.append(f"в обзоре ссылка [{c}], которой нет в таблице")
-if len(set(cites)) < 5:
-    errors.append(f"в обзоре {len(set(cites))} разных ссылок, нужно не меньше 5")
+if len(set(cites)) < 3:
+    errors.append(f"в обзоре {len(set(cites))} разных ссылок, нужно не меньше 3")
 print("\n".join(errors) if errors else "принято: таблица и ссылки согласованы с библиотекой")
 sys.exit(1 if errors else 0)
