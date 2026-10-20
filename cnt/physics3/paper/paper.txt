@@ -1,0 +1,1046 @@
+arXiv:2503.00064v1 [physics.class-ph] 27 Feb 2025
+
+Once more about radiation from uniformly accelerating charge
+E. T. Akhmedov1,2 and M. N. Milovanova1
+1Institutskii per, 9, Moscow Institute of Physics and Technology, 141700, Dolgoprudny, Russia
+2Academician Kurchatov Square, 1, NRC ”Kurchatov Institute”, 123182, Moscow, Russia
+March 4, 2025
+Abstract
+We consider an electric charge uniformly accelerating along x direction and moving with constant velocity along y direction. We show that in the co-accelerating along x direction Rinder’s frame this charge creates non-zero Poynting vector, which, however, does not lead to a non-vanishing ﬂux through an inﬁnitely distant surface. Furthermore, we show that in the laboratory Minkowski frame such a charge creates a stress energy ﬂux that does not vanish at inﬁnity. We interpret these observations as that while the Rindler’s frame corresponds to the static zone around the charge, the Minkowski frame does contain the wave zone. We give detailed calculations and explanations concluding that uniformly accelerating charge does radiate.
+1 Introduction
+The issue of radiation from a uniformly accelerating charge has been extensively discussed in the literature (see, e.g., [1], [2], [3]). However, it remains noteworthy that there is no universally accepted consensus on this matter among experts.
+The problem is complex due to its high symmetry and unusual nature: eternally accelerating charges do not occur in nature, and the answer to the question may, in principle, depend on the initial conditions and the precise deﬁnition of classical radiation. To place the issue in a broader context, it is important to note that it is closely related to the following series of problems1:
+1. Does a charge ﬁxed in a gravitational ﬁeld produce radiation? (According to the equivalence principle, such a charge is equivalent to a uniformly accelerating charge in Minkowski spacetime.) If radiation is produced, would it be observed by a remote observer ﬁxed in the gravitational ﬁeld? Furthermore, if radiation is produced, would it be detected by a remote observer who is free-falling within the gravitational ﬁeld?
+1At least some of these questions are interconnected through coordinate transformations between Rindler and Minkowski reference frames.
+1
+
+2. Does a charge in free fall within a homogeneous gravitational ﬁeld emit radiation? (According to the equivalence principle, such a charge is equivalent to a charge in inertial motion within Minkowski spacetime.) If radiation is emitted, would it be observed by a co-falling remote observer? Furthermore, if radiation is emitted, would it be detected by a remote observer ﬁxed in the gravitational ﬁeld? Now consider a charge in inertial motion within Minkowski spacetime: does such a charge emit radiation in an accelerating reference frame?
+3. Does a charge in free fall within an expanding Universe emit radiation as observed from another free-falling reference frame within the same Universe2?
+4. What are the answers to the above questions if, instead of point-like sources of radiation, one considers, for example, scalar waves as the sources3? If radiation is produced by a wave as a source, while no radiation arises from a point-like source, what is the explanation for this apparent paradox?
+While some of these questions may have straightforward answers, others require a more thorough examination. In this paper, we present our analysis of the situation.
+We will now outline several key facts, some of which are straightforward, while others are more complex:
+• Radiation is not merely a non-zero ﬂux of the Poynting vector; it is a ﬂux that does not vanish at inﬁnity.
+• The radiation friction force can only be deﬁned after an averaging procedure and cannot be deﬁned for a trajectory that lacks ﬁnite spatial support [3]. Therefore, the absence of radiation friction force does not necessarily imply the absence of radiation.
+• The intensity of radiation, deﬁned as the integral over a distant surface of the scalar product of the Poynting vector and the unit area vector, is not Lorentz invariant. The Lorentz invariant quantity is the power associated with the energy loss of the radiation source. This power, being independent of the reference frame, does not depend on the observer. If the power of energy loss is nonzero, radiation must be present.
+• For a uniformly accelerating charge, the energy loss power is proportional to the square of the four-acceleration and, therefore, is nonzero.
+• In the paper [4], it is demonstrated that the intensity of radiation from a uniformly accelerating charge in Minkowski space is nonzero at inﬁnity. Furthermore, [4] shows that, in Rindler coordinates, both the magnetic ﬁeld and, consequently, the Poynting vector vanish.
+• The electromagnetic ﬁeld surrounding an accelerating charge forms two distinct regions: a close, static zone and a distant radiation zone. The static zone exists near the source, at distances shorter than the so-called radiation creation length, which is the characteristic distance the source must travel to produce radiation. In contrast, the radiation zone extends over distances much greater than the radiation creation length.
+2The answer to this question for point-like sources of radiation is provided in [8]. 3Question No. 3 regarding the use of waves as sources of radiation for scalar ﬁelds was addressed in [9].
+2
+
+• For a uniformly accelerating charge with acceleration a, the radiation creation length (and the characteristic wavelength of the radiation) is 1/a, assuming the speed of light is set to unity, c = 1. The Rindler coordinates cannot be extended beyond a distance of 1/a from the charge in the direction of radiation.
+The situation considered in [4] is quite restrictive. To explore a more general case, this paper examines a charge that not only undergoes uniform acceleration along the ﬁrst direction but also moves with constant velocity along the second spatial direction. This approach allows us to observe that, in a less restrictive scenario, the magnetic ﬁeld in the co-accelerating frame is nonzero. Consequently, we ﬁnd that the Poynting vector is nonzero in the co-moving frame. However, this Poynting vector does not correspond to any radiation. These observations lead us to classify the co-moving reference frame as being within the static zone. In contrast, radiation is present beyond the Rindler frame, in the wave zone.
+
+2 Set up of the problem
+We look for solutions of the Maxwell equations
+
+√1 ∂µ(√−gF µν) = 4πjν. (1) −g
+
+in two diﬀerent reference frames of ﬂat space-time — the Minkowski metric:
+
+ds2 = dt2 − dx2 − dy2 − dz2
+
+(2)
+
+and the Rindler one:
+
+ds2 = ρ2dτ 2 − dρ2 − dy2 − dz2.
+
+(3)
+
+The relation between these coordinate systems is as follows:
+
+t = ρ sinh(τ ), x = ρ cosh(τ ), y = y, z = z.
+
+(4)
+
+We use the Lorenz gauge:
+
+∂µAµ = gµν Γµν η Aη.
+
+(5)
+
+In the Maxwell equation we consider the source, jµ, created by a particle that is uniformly accelerating. Namely, we assume that the source is moving with constant 4-acceleration aµaµ = −a2
+along the world-line parameterized as follows:
+
+α
+
+1
+
+1
+
+1
+
+d2zµ
+
+z (θ) = sinh(aθ) cosh(φ), cosh(aθ), sinh(aθ) sinh(φ), 0 , aµ = 2
+
+(6)
+
+a
+
+a
+
+a
+
+dθ
+
+where θ — its proper time. Such a world-line is obtained from the standard one
+
+α
+
+1
+
+1
+
+z¯ (θ) = sinh(aθ), cosh(aθ), 0, 0 ,
+
+(7)
+
+a
+
+a
+
+3
+
+by boosting the later along the y axis with the rapidity φ. That is, we consider the source that is accelerating along the x axis and moving with constant velocity along the y one.
+
+3 The solution in Rindler’s frame
+The easiest way to ﬁnd the electromagnetic four-potential is to use the expressions for the LiénardWiechert potentials in Minkowski space-time for a charge moving along a given world-line [6, 7]:
+Aµ(t, x) = (1, −v) , where R = t − trad, (8) R − v, R
+
+in our case trad = z0(θ, φ) and R = x − z(θ, φ). The relation between R and t establishes that the proper time of the moment of radiation
+and the time of the detection of the radiation are connected by the light-like world-line and the three-speed of the source v(θ, φ) = dz(θ, φ)/dz0(θ, φ) is equal to:
+
+v(θ, φ) = tanh(aθ) , tanh(φ), 0 . (9) cosh(φ)
+
+Squaring the relation between R and t and substituting into it the world-line of the source (6), we ﬁnd the relation between the event of the detection of the radiation and the event of its radiation
+
+− t2 + x2 + y2 + z2 + a21 − 2ya sinh(aθ) sinh(φ) =
+
+= 2x cosh(aθ) − 2t sinh(aθ) cosh(φ), (10)
+
+a
+
+a
+
+and in the Rindler region
+
+1 + ρ2 + y2 + z2 = a2 = 2 ρ cosh(τ ) cosh(aθ) + y sinh(aθ) sinh(φ) − ρ sinh(τ ) sinh(aθ) cosh(φ) , (11)
+a
+which we will use below. Then let us write the denominator of the right hand side of eq.(8) in Minkowski coordinates:
+
+R − v, R = t − tanh(aθ) x − tanh(φ)y, (12) cosh(φ)
+
+and in Rindler ones R − v, R = ρ sinh(τ ) − ρ cosh(τ ) tanh(aθ) − tanh(φ)y, (13) cosh(φ)
+
+where we have used the relation between trad and R from (8). These relations will be also used below.
+We want to ﬁnd and compare the expressions for the Lienard-Wiechert potentials and electro-
+
+4
+
+magnetic ﬁelds in the Rindler and Minkowski coordinate frames. They are related by the coordinate transformation from (4) as components of the four-vector potential and the electromagnetic tensor, respectively.
+Before writing out the expression for the four-potential in the Rindler’s frame, let us use the remaining gauge freedom to simplify it. The Lorenz gauge ﬁxing condition (5) in this frame is as follows:
+
+AR gµν ∂µARν = 1 ρ ,
+
+(14)
+
+where gµν is the inverse Rindler metric and we have introduced the index R just to stress that these expressions are attributed to the Rindler’s frame, to distinguish them from those in the Minkowski frame (without an index). Then the scalar function α(τ, ρ, y, z) performing the remaining gauge freedom, i.e. the gauge transformation Aµ − ∂µα that does not change the gauge condition, must solve
+gµν∂µ∂ν α = ∂1α . (15) ρ
+
+This equation has such a solution as α = C · ln(ρ) with an arbitrary constant C. Let us use such
+
+a
+
+remaining
+
+gauge
+
+transformation
+
+over
+
+the
+
+ﬁrst
+
+component
+
+of
+
+the
+
+four-potential,
+
+AR
+1
+
+=
+
+AR
+1
+
+−
+
+ρ−1,
+
+to change its expression. Then the electromagnetic four-potential in Rindler coordinates takes the
+
+following form:
+
+ρ cosh(τ − aθ) + cosh(τ ) cosh(aθ) cosh(φ) − 1
+
+A0R =
+
+f (τ, ρ, y, z, θ) ,
+
+A1R = yρ · cosh(aθ) sinh(φ) f (τ, ρ, y, z, θ) ,
+
+A2R = −cosh(aθ) sinh(φ) f (τ, ρ, y, z, θ) ,
+
+A3R = 0.
+
+(16)
+
+To simplify these expressions, we introduce the following function:
+
+f (τ, ρ, y, z, θ) = ρ sinh(τ − aθ) − cosh(aθ) y sinh(φ) + ρ sinh(τ ) 1 − cosh(φ) . (17)
+
+Note
+
+that
+
+in
+
+the
+
+Rindler
+
+frame
+
+AR
+0
+
+has
+
+a
+
+diﬀerent
+
+dimensionality
+
+from
+
+AR.
+
+That
+
+is
+
+because
+
+while
+
+ρ, y, z have dimension of length, the time coordinate τ is dimensionless. For the same reason, the
+
+electric ﬁeld, ER, also has a diﬀerent dimensionality from the magnetic one, BR.
+
+5
+
+The corresponding electric and magnetic ﬁelds in the Rindler frame are as follows:
+
+aρ 2yρ sinh(τ ) sinh(φ) − cosh(φ) − ρ2 + y2 + z2 + a−2
+
+E1R =
+
+2f (τ, ρ, y, z, θ)3
+
+,
+
+aρ sinh(τ ) sinh(φ) ρ2 − y2 + z2 + a−2 − 2ρy cosh(φ) E2R = − 2f (τ, ρ, y, z, θ)3 ,
+
+aρz ρ cosh(φ) + y sinh(τ ) sinh(φ) E3R = f (τ, ρ, y, z, θ)3 . (18)
+
+and
+
+B1R = f (τ, ρ, y, z, θ)3 aρz cosh(τ ) sinh(φ) ,
+
+B2R = f (τ, ρ, y, z, θ)3 ayz cosh(τ ) sinh(φ) ,
+
+R a (−ρ2 − y2 + z2 + a−2) cosh(τ ) sinh(φ)
+
+B3 =
+
+3
+
+.
+
+(19)
+
+2f (τ, ρ, y, z, θ)
+
+Then the corresponding Poynting vector is:
+
+R a2ρ cosh(τ ) sinh(φ)
+
+2
+
+2
+
+2
+
+−2
+
+S1 =
+
+6 − 2ρy cosh(φ) ρ + z + y − a −
+
+16πf (τ, ρ, y, z)
+
+− sinh(τ ) sinh(φ) − ρ4 + y4 + z4 + 2y2z2 + 2a−2 z2 − y2 + a−4 ,
+
+R a2ρ cosh(τ ) sinh(φ)
+
+2
+
+2
+
+2
+
+−2
+
+S2 =
+
+6 2ρy sinh(τ ) sinh(φ) ρ + y + z − a +
+
+16πf (τ, ρ, y, z)
+
++ cosh(φ) ρ4 − y4 + z4 + 2ρ2z2 + 2a−2 z2 − ρ2 + a−4 ,
+
+R a2ρz cosh(τ ) sinh(φ) 2 2 2 −2
+
+S3 =
+
+6 ρ + y + z + a ρ sinh(τ ) sinh(φ) − y cosh(φ) . (20)
+
+8πf (τ, ρ, y, z)
+
+When we return to the situation that was considered in [4], φ = 0, we reproduce the results of that paper. In the case φ = 0 the magnetic ﬁeld and Poynting vector in the Rindler’s frame are zero. Meanwhile in our situation these quantities are not zero and the question of the presence or the absence of the radiation in the Rindler’s frame demands a careful consideration.
+To answer the last question we have to ﬁnd the behavior of the intensity of the radiation (stressenergy ﬂux) within Rindler’s region but far away from the source. Using the relation between trad and R from (8) the distance from the source R 2, can be written in Rindler’s coordinates as:
+
+R 2 = ρ sinh(τ ) − a−1 sinh(aθ) cosh(φ) 2.
+
+In has to be taken to inﬁnity in units of acceleration. Essentially our goal is to single out in (20) the last function of τ, ρ, y, z in the limit R 2 → ∞. But there are diﬀerent ways to go far away
+
+6
+
+from the source of radiation within the Rindler’s wedge. Let us examine them separately. To fulﬁll the relation (11) in the limit R 2 → ∞, the Rindler’s time τ should also be taken to
+inﬁnity, which can be expected on general grounds. Let us take the large distance limit in such a way that ρ ∼ ekτ , k ∈ [0, 1]. Note that k cannot be greater than 1, since then the relation (11) will not be satisﬁed. Then there are several ways in which the spatial coordinates tend to inﬁnity:
+1. If k = 1, then y, z can be taken to be of the order of ρ in the limit in question, or they can be taken to remain ﬁnite, i.e. will not tend to inﬁnity;
+2. If k < 1, then we should assume that y2 + z2 ∼ e(k+1)τ to fulﬁll (11). In any case the term y sinh(aθ) sinh(φ) on the right hand side of (11) is much smaller than all the other terms. Therefore, we can drop this term oﬀ. In all, we consider such a limit, in which:
+
+eτ
+
+ρ2 + y2 + z2
+
+cosh(τ ) ≈ sinh(τ ) ≈ ≈ −1
+
+.
+
+(21)
+
+2 2a ρ (cosh(aθ) − sinh(aθ) cosh(φ))
+
+Substituting these expressions into (20) gives the approximate expression for the components of the Poynting vector at large spatial distances within the Rindler’s wedge:
+
+a−2 sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4 S1R ≈ 4 6 ×
+πρ ρ2 + y2 + z2 sinh(aθ) − cosh(aθ) cosh(φ)
+
+× − 4a−1ρ2y coth(φ) cosh(aθ) − sinh(aθ) cosh(φ) + ρ4 − y2 + z2 2 ,
+
+2a−2y sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4 S2R ≈ 3 6 ,
+π ρ2 + y2 + z2 sinh(aθ) − cosh(aθ) cosh(φ)
+
+2a−2z sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S3R ≈ 3
+
+6,
+
+(22)
+
+π ρ2 + y2 + z2 sinh(aθ) − cosh(aθ) cosh(φ)
+
+as follows from (21) in the limit under consideration ρ2 + y2 + z2 → ∞ in units of the acceleration 1/a. This then leads to the following expression for the energy ﬂux through a solid angle dΩ at long distance from the source (within the Rindler’s wedge):
+
+dIR = SR, n dΩ
+
+2
+
+sinh2 (φ)
+
+R∼
+
+2×
+
+2ρ ρ2 + y2 + z2
+
+× ρ4 − (y2 + z2)2 − 4ρa−1(ρy − (y2 + z2))(cosh(aθ) − sinh(aθ) cosh(φ)) .
+
+(23)
+
+This expression is vanishing for the both ways to take the large spatial distance limit, which have been described above, except k = 0. In the latter case the ﬂux in the inﬁnity is not zero in some directions and even sometimes is negative. We give technical details in the appendix A. Please note that the resulting ﬂux is zero in the limit φ = 0. And what is even more important is that the ﬂux through the inﬁnity depends on the spatial coordinate ρ, which is never the case in standard situations. Perhaps that is the hint for the resolution of the puzzle: the notion of the large spatial
+
+7
+
+distance limit in the Rindler’s frame is not that straightforward.
+
+4 The solution in Minkowski frame
+Let us now consider the situation in the Minkowski frame. We can either directly calculate the electromagnetic ﬁelds from (8) or transform back to the Minkowski frame the ﬁelds found above in Rindler’s frame. As an independent check both ways we obtain the same answer.
+Using eq. (10) and eq. (4) to express t and x via Rindler’s coordinates, we obtain
+cosh(τ − aθ) = = 2ρ a2 a 1 + ρ2 + y2 + z2 − 2 sinh(aθ) a y sinh(φ) + ρ sinh(τ ) 1 − cosh(φ) (24)
+In the following expressions this relationship will be implied wherever there the functions cosh(τ − aθ) and sinh(τ − aθ) are present. Then, making the change of the coordinates to the Minkowskian coordinates in (17) we obtain the functions:
+
+f (t, x) = − cosh(aθ) y sinh(φ) + t(1 − cosh(φ) +
++ 1 4 t2 − x2 + a a−2 − t2 + x2 + y2 + z2 − 2 sinh(aθ) y sinh(φ) + t 1 − cosh(φ) 2, 2 (25)
+
+where we have used (24) to express out sinh(τ − aθ). Then, the electric and magnetic ﬁelds in the Minkowski frame can be written as follows:
+
+E1 = − a
+
+cosh(φ) a−2 + t2 − x2 + y2 + z2 − 2yt sinh(φ) ,
+
+2f (t, x)3
+
+ax y cosh(φ) − t sinh(φ)
+
+E2 =
+
+f (t, x)3 ,
+
+axz cosh(φ)
+
+E3 =
+
+3.
+
+(26)
+
+f (t, x)
+
+and
+
+axz sinh(φ)
+
+B1 =
+
+3,
+
+f (t, x)
+
+az y sinh(φ) − t cosh(φ)
+
+B2 =
+
+f (t, x)3 ,
+
+B3 = a 2f (t, x)3 sinh(φ) a−2 − t2 − x2 − y2 + z2 + 2yt cosh(φ) . (27)
+
+And the resulting Poynting vector is:
+
+8
+
+S1 =
+
+a2x
+
+2
+
+2
+
+6 2ty sinh(φ) y sinh(φ) − t cosh(φ) + 2t y + z −
+
+8πf (t, x)
+
++ sinh(φ) t sinh(φ) − y cosh(φ) t2 + x2 + y2 + z2 − a−2 ,
+
+S2 =
+
+a2 2 2 2 2 2 2 2 −2 6 8ty cosh (φ) t + y − 4ty t + x + y − z − a +
+
+32πf (t, x)
+
++ 2 sinh(φ) cosh(φ) z2 − x2 + a−2 2 − t2 + y2 2 + 4 x2z2 − t2y2 ,
+
+S3 =
+
+a2z 2 2 2 2 −2 6 − y sinh(φ) cosh(φ) 3t + x + y + z + a +
+
+8πf (t, x)
+
++ t cosh2(φ) t2 + x2 + 3y2 + z2 + a−2 − 2t x2 + y2 .
+
+(28)
+
+These expressions reduce to those found in [4] in the limit φ = 0. Furthermore, in that paper it was shown that the ﬂux through the inﬁnitely distant surface is not zero, when the radiation achieves the surface after the appropriate time, i.e. there is an energy ﬂux emitted by the homogeneously accelerating charge which decouples from the source and can be measured by a very distant inertial observer in ﬂat space-time. Obviously the same is true for the case when φ = 0. But still let us be a bit more explicit and give some details.
+Namely, let us show that the energy ﬂux, which follows from (28), through an inﬁnitely distant surface is not zero. To perform the integration over the distant surface, we choose the following parametrization:
+
+t = r, x = r cos(α), y = r sin(α) cos(β), z = r sin(α) sin(β),
+
+(29)
+
+and take the limit ar → ∞. In this parametrization eq. (28) reduces to:
+
+S1 =
+
+a2 cos(α)
+
+2
+
+2
+
+2
+
+−2
+
+2
+
+6 sinh (φ) 2 + 2 sin (α) cos (β) − (ar) +
+
+8πr f (r, α, β)
+
++ (ar)−2 − 4 sin(α) cos(β) sinh(φ) cosh(φ) + 2 sin2(α) ,
+
+a2 −2 2 2 2 2
+
+S2 =
+
+2
+
+6 2 sin(α) cos(β) (ar) + 2 sinh (φ) sin (α) cos (β) + 1 + 2 sin (α) +
+
+16πr f (r, α, β)
+
++ sinh(φ) cosh(φ) (ar)−4 − 2(ar)−2 cos2(α) − sin2(α) sin2(β) − 8 sin2(α) cos2(β) ,
+
+a2 sin(α) sin(β)
+
+2
+
+−2
+
+2
+
+2
+
+S3 = 2
+
+6 sinh (φ) (ar) + 2 sin (α) cos (β) + 2 −
+
+8πr f (r, α, β)
+
+− (ar)−2 + 4 sin(α) cos(β) sinh(φ) cosh(φ) + (ar)−2 + 2 sin2(α) ,
+
+(30)
+
+where
+
+f (r, α, β) = − cosh(aθ) sin(α) cos(β) sinh(φ) + (1 − cosh(φ)) +
+
+2
+
+(31)
+
++ sin2(α) + (2ar)−1 − sinh(aθ) sin(α) cos(β) sinh(φ) + (1 − cosh(φ)) .
+
+9
+
+Then the energy ﬂux through a solid angle dΩ is:
+
+dI = S, n r2 =
+
+a − 2 4 6 (ar) sin(α) cos(β) sinh(φ) cosh(φ)+
+
+dΩ
+
+16πf (r, α, β)
+
++ 2(ar)−2 1 + sinh2(φ) sin2(α) sin2(β) − cosh2(φ) cos2(α) +
+
+(32)
+
++ 4 sin2(α) + sinh2(φ) sin2(α) cos2(β) + 1 − sin(α) cos(β) sinh(2φ) ,
+
+where n = (cos(α), sin(α) cos(β), sin(α) sin(β)). In the large distance limit, ar → ∞, it reduces to:
+
+dI a2 sin2(α) + sinh2(φ) sin2(α) cos2(β) + 1 − sin(α) cos(β) sinh(2φ) ≈ , (33)
+
+dΩ
+
+4πg(α, β)6
+
+where
+
+g(α, β) = − cosh(aθ) sin(α) cos(β) sinh(φ) + (1 − cosh(φ)) +
+
+2
+
+(34)
+
++ sin2(α) + sinh2(aθ) sin(α) cos(β) sinh(φ) + (1 − cosh(φ)) .
+
+When φ = 0 the expression for the ﬂux that we ﬁnd here reduces to the one found in [4]. Note that the obtained expression is not zero. Thus, there is a ﬂux through a distant surface.
+The expression (33) is always non-negative and, therefore, the total integrated ﬂux is non-zero.
+
+5 Peculiar properties of the solution and other options
+In this section we consider several peculiar properties of the solutions of the Maxwell’s equations which have been found above. Consider, e.g., the limit in which the acceleration, a, of the source of the radiation is taken to zero. Then the electromagnetic four-potential in the Rindler’s frame becomes a pure gauge:
+
+lim ARµ (ρ → a−1e±τ , τ, y, z) = (coth(τ ), 0, 0, 0)
+
+(35)
+
+a→0
+
+or
+
+lim ARµ (τ → ±∞, ρ, y, z) = (±1, 0, 0, 0) .
+
+(36)
+
+a→0
+
+Detailed calculations can be found in the appendix B. Therefore, in the absence of acceleration, the electric and magnetic ﬁelds are zero meanwhile the source seems to be still present, just does not accelerate.
+Furthermore, in the appendix B we also show that in the Minkowski frame when a → 0 the electromagnetic four-potential is not a pure gauge only in one of the cases:
+
+lim Aµ(x → a−1 cosh(aθ), t, y, z) = cosh(φ), 0,
+
+sinh(φ)
+
+,0 ,
+
+a→0
+
+θ − t cosh(φ) + y sinh(φ)
+
+lim Aµ(t → ±a−1, x, y, z) = (0, 0, 0, 0) .
+
+(37)
+
+a→0
+
+10
+
+The fact that the electric and magnetic ﬁelds are not zero only when x → a−1 cosh(aθ) will be explained below. For all other cases both magnetic and electric ﬁelds tend to zero when the source does not accelerate. Thus, we seem to have a paradox: for the world-line under consideration non-accelerating charge, a → 0, although being present, does not create even an electric ﬁeld.
+The resolution of this apparent puzzle is as follows. In the limit a → 0, the world-line of the charge (6) is taken inﬁnitely far away along one of the spatial directions:
+
+lim zα(θ) = (θ cosh φ, ∞, θ sinh φ, 0) .
+
+(38)
+
+a→0
+
+Therefore, only in the limit when x → a−1 cosh(aθ) in the Minkowski frame the electromagnetic ﬁelds are non-zero.
+To clarify the situation let us consider a bit diﬀerent world-line for which the position of the charged source does not get shifted inﬁnitely far away in the limit of zero acceleration:
+
+zα(θ) = 1 sinh aθ cosh φ, 1 cosh(aθ) − 1 , 1 sinh aθ sinh φ, 0 . (39)
+
+a
+
+a
+
+a
+
+In such a case obviously
+
+lim zα(θ) = θ cosh φ, 0, θ sinh φ, 0 .
+
+(40)
+
+a→0
+
+However, this world-line does not fully (for all values of its proper time) lie in the Rindler’s region
+that we consider. In fact, the condition for the world-line to ﬁt into the appropriate quadrant, |z0| ≤ z1, is fulﬁlled only when
+
+cosh(φ) ≤ cosh(aθ) − 1 ≤ 1. (41) | sinh(aθ)|
+
+Let us ﬁnd what electric and magnetic ﬁelds does the charge create in Minkowski frame if it moves along such a world-line as (39). The corresponding relation between the time of radiation and the time of the detection of the radiation in Minkowski frame is as follows:
+
+x cosh(aθ) − t sinh(aθ) = x + a − t2 + x2 + y2 + z2 + 1 1 − cosh(aθ) +
+
+2
+
+a
+
+(42)
+
++ sinh(aθ) t(cosh(φ) − 1) − y sinh(φ) .
+
+Then, for this world-line we have that:
+
+R − v, R = t − sinh aθ x + a−1 − sinh φ y. (43)
+
+cosh aθ cosh φ
+
+cosh φ
+
+In such a case the four-potential looks like:
+
+Aµ(t, x, y, z) = 1 cosh aθ cosh φ, − sinh aθ, − cosh aθ sinh φ, 0 (44) f (t, x, y, z)
+
+11
+
+where
+
+f (t, x, y, z) = t cosh(aθ) − x sinh(aθ) − a−1 sinh aθ+
+
++ cosh aθ t(cosh φ − 1) − y sinh φ .
+
+(45)
+
+Therefore, the electric and magnetic ﬁelds are
+
+E1 = a 2f (t, x, y, z)3 2ty sinh(φ) − cosh(φ) t2 − x2 + y2 + z2 − 2a−1x ,
+
+(ax + 1) y cosh(φ) − t sinh(φ)
+
+E2 =
+
+f (t, x, y, z)3 ,
+
+z(ax + 1) cosh(φ)
+
+E3 =
+
+3,
+
+(46)
+
+f (t, x, y, z)
+
+and
+
+z(ax + 1) sinh(φ)
+
+B1 =
+
+3,
+
+f (t, x, y, z)
+
+az t cosh(φ) − y sinh(φ) B2 = − f (t, x, y, z)3 , B3 = a 2f (t, x, y, z)3 2ty cosh(φ) − sinh(φ) t2 + x2 + y2 − z2 + 2a−1x , (47)
+
+In the case when φ = 0 these expressions reduce to:
+
+E1 = − E2 = E3 =
+
+4a t2 − x2 + y2 + z2 − 2a−1x 3,
+2
+2x + a(−t2 + x2 + y2 + z2) + 2a (1 − cosh(aθ)) − 4(x2 − t2) − 2a−1 sinh(aθ)
+8ay (x + a−1) 3,
+2
+2x + a(−t2 + x2 + y2 + z2) + 2a (1 − cosh(aθ)) − 4(x2 − t2) − 2a−1 sinh(aθ)
+8az(x + a−1) 3,
+2
+2x + a(−t2 + x2 + y2 + z2) + 2a (1 − cosh(aθ)) − 4(x2 − t2) − 2a−1 sinh(aθ) (48)
+
+12
+
+and
+
+B1 = 0, B2 = −
+B3 =
+
+3 8azt ,
+2
+2x + a(−t2 + x2 + y2 + z2) + 2a (1 − cosh(aθ)) − 4(x2 − t2) − 2a−1 sinh(aθ) 3 8ayt ,
+2
+2x + a(−t2 + x2 + y2 + z2) + 2a (1 − cosh(aθ)) − 4(x2 − t2) − 2a−1 sinh(aθ) (49)
+
+Furthermore in the limits a → 0 and φ → 0 we have that the velocity of the charge is also vanishing
+
+lim vi(θ) = lim sinh aθ , sinh φ , 0 = (0, 0, 0) . (50)
+
+φ→0,a→0
+
+φ→0,a→0 cosh aθ cosh φ cosh φ
+
+As the result the expression for the electric ﬁeld reduces to its standard Coulomb form:
+
+lim E = 3 R , t − θ = |R|. (51)
+
+φ→0,a→0
+
+(t − θ)
+
+Meanwhile the magnetic ﬁeld is vanishing. As it should be, if φ is set to zero If we consider the limit of zero acceleration keeping φ = 0, then both electric and magnetic
+ﬁelds will be non-zero
+
+E = 3 (−x cosh(φ), t sinh(φ) − y cosh(φ), −z cosh(φ)), θ − t cosh(φ) + y sinh(φ)
+
+(−z sinh(φ), 0, x sinh(φ)) (52)
+
+B=
+
+3.
+
+θ − t cosh(φ) + y sinh(φ)
+
+We think that these observations clarify the properties of the solutions of the Maxwell’s equations that we consider in this paper.
+
+6 Conclusions and acknowledgments
+Thus, we observe that a uniformly accelerating charge does create a radiation in the wave zone (i.e. as seen by a distant observer in Minkowski frame). At the same time in static zone corresponding to the co-moving Rindler’s frame the radiation is absent.
+The question that remains to be considered is the number 4 among the questions formulated in the Introduction section.
+This work was supported by the Ministry of Science and Higher Education of the Russian Federation (agreement no. 075–15–2022–287).
+
+13
+
+A Appendix
+
+In this appendix we study the radiation ﬂux in the Rindler’s frame in some peculiar situations. We observe that sometimes the ﬂux is not zero and even is negative.
+Namely, we consider the behavior of the Poynting vector and the energy ﬂux in the case where ρ remains ﬁnite and y2 + z2 ∼ eτ are taken to inﬁnity. To observe somewhat anomalous behavior of the energy ﬂux, let us consider separately two cases when in the last limit y remains ﬁnite (recall that along this direction the charge is moving with constant velocity) and the the case when in the limit under consideration z remains ﬁnite.
+In the ﬁrst case z2 ∼ eτ → ∞. Then the Poynting vector (20) in this limit takes the following form:
+
+sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S1R ≈ −
+
+6,
+
+πa2ρz4 sinh(aθ) − cosh(aθ) cosh(φ)
+
+2 sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S2R ≈
+
+6×
+
+πa3z6 sinh(aθ) − cosh(aθ) cosh(φ)
+
+× ay + coth(φ) (cosh(aθ) − sinh(aθ) cosh(φ)) ,
+
+2 sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S3R ≈
+
+6,
+
+(53)
+
+πa2z5 sinh(aθ) − cosh(aθ) cosh(φ)
+
+and the energy ﬂux (|R| ∼ az2):
+
+dI R
+
+R
+
+2 sinh2 (φ)
+
+2
+
+= S ,n R ∼
+
+2 − az + o(z) ,
+
+(54)
+
+dΩ
+
+aρz
+
+where we used (21) to obtain these expressions. It can be seen that the ﬂux in this limit does not tend to zero at inﬁnity and even becomes negative for ﬁnite φ. Please note, however, that the resulting ﬂux is zero in the limit φ = 0. And what is even more important is that the ﬂux through the inﬁnity depends on the spatial coordinate ρ, which is never the case in standard situations. Perhaps that is the hint for the resolution of the puzzle: the notion of the large spatial distance limit in the Rindler’s frame is not that straightforward.
+For completeness let us also consider the second case mentioned at the beginning of the ap-
+
+14
+
+pendix. We see the same behavior of the energy ﬂux in this case y2 ∼ eτ → ∞:
+
+sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S1R = −
+
+6,
+
+πa2ρy4 sinh(aθ) − cosh(aθ) cosh(φ)
+
+2 sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S2R =
+
+6,
+
+πa2y5 sinh(aθ) − cosh(aθ) cosh(φ)
+
+2z sinh2(φ) cosh(aθ) − sinh(aθ) cosh(φ) 4
+
+S3R =
+
+6,
+
+(55)
+
+πa2y6 sinh(aθ) − cosh(aθ) cosh(φ)
+
+and the energy ﬂux is (|R| ∼ ay2):
+
+dI R
+
+R
+
+2 sinh2 (φ)
+
+2
+
+= S ,n R ∼
+
+2 − ay + o(y) .
+
+(56)
+
+dΩ
+
+aρy
+
+Thus, it has the same properties as the ﬂux of the ﬁrst case.
+
+B Appendix
+
+To obtain equation (35), consider the relation (11):
+
+ρ(cosh(τ ) cosh(aθ) − sinh(τ ) sinh(aθ)) =
+
+= a a−2 + ρ2 + y2 + z2 − sinh(aθ)(y sinh(φ) + ρ sinh(τ )(1 − cosh(φ))).
+
+(57)
+
+2
+
+Using this relation, we can express ρ via other variables in the limit a → 0:
+
+lim ρ = lim e±τ 1 ∓ θ cosh(φ) . (58)
+
+a→0
+
+a→0
+
+a
+
+Since θ is the proper time, then from the above limit we obtain that at a ﬁnite time τ the spatial position of the radiation observation point must be at inﬁnity.
+Reversing the argument, the eq. (57) can be solved for τ . Then for a ﬁnite ρ the time of the radiation observation τ must tend to ±∞:
+
+lim eτ = lim ρ−1 1 + θ cosh(φ) or lim eτ = 0.
+
+(59)
+
+a→0
+
+a→0
+
+a
+
+a→0
+
+15
+
+Thus, in the case (58), in the limit a → 0 the four-potential in the Rindler region (16) will tend to
+
+lim AR0 (τ, y, z) = lim
+
+ρ cosh(τ ) cosh(φ)
+
+= coth(τ ),
+
+a→0
+
+a→0 ρ sinh(τ ) cosh(φ) − y sinh(φ)
+
+lim A1R(τ, y, z) = lim y · sinh(φ) = 0,
+
+a→0
+
+a→0 ρ ρ sinh(τ ) cosh(φ) − y sinh(φ)
+
+lim A2R(τ, y, z) = lim − sinh(φ) = 0,
+
+a→0
+
+a→0 ρ sinh(τ ) cosh(φ) − y sinh(φ)
+
+lim AR3 (τ, y, z) = 0,
+
+(60)
+
+a→0
+
+which agrees with (35). Such a four-potential is a pure gauge with α = ln(sinh(τ )). If we consider the other two cases (59), the four-potential will tend accordingly
+
+lim ARµ (τ → − ln(aρ), ρ, y, z) = (1, 0, 0, 0) ,
+
+(61)
+
+a→0
+
+or
+
+lim ARµ (τ → −∞, ρ, y, z) = (−1, 0, 0, 0) .
+
+(62)
+
+a→0
+
+The resulting four-potentials are also pure gauges. Let us consider also the behavior of a four-vector potential in the limit a → 0 in the Minkowski
+coordinates. From the relation (10) we obtain the following limiting relation for the ﬁnite t:
+
+lim x = lim 1 cosh(aθ) ± θ2 − 2θ(t cosh(φ) − y sinh(φ)) − (y2 + z2 − t2) ,
+
+(63)
+
+a→0
+
+a→0 a
+
+and the another relation for the ﬁnite x:
+
+lim t = lim θ cosh(φ) ± 1 − x . (64)
+
+a→0
+
+a→0
+
+a
+
+Then the limiting values of the four-vector potential, when a → 0, in the Minkowski frame in the cases (63) and (64) are, correspondingly:
+
+lim Aµ(x → a−1 cosh(aθ), t, y, z) = cosh(φ), 0,
+
+sinh(φ)
+
+,0 ,
+
+a→0
+
+θ − t cosh(φ) + y sinh(φ)
+
+lim Aµ(t → ±a−1, x, y, z) = (0, 0, 0, 0) .
+
+(65)
+
+a→0
+
+It can be seen that in the ﬁrst limit the four-vector is a pure gauge only when φ = 0.
+
+References
+[1] W. Pauli, Theory Relativity, Pergamon Press (1958).
+[2] T. Fulton and F. Rohrlich, Annals of Physics 9, Issue 4, 499-517 (1960) doi.org/10.1016/00034916(60)90105-6.
+
+16
+
+[3] R. Peierls, Surprises in Theoretical Physics, Princeton University Press (1979) doi.org/10.1515/9780691217888.
+[4] D. Kalinov, Phys. Rev. D 92, no.8, 084048 (2015) doi:10.1103/PhysRevD.92.084048 [arXiv:1508.04281 [hep-th]].
+[5] M. Born, Annalen Phys. 30, 840 (1909) doi.org/10.1002/andp.19093351102. [6] A. Liénard, L’éclairage électrique 16, No. 27-29, 5-14, 53-59, 106-112 (1898). [7] E. Wiechert, Archives Néerlandaises 5, 549-573 (1900) doi.org/10.1002/andp.19013090403. [8] E. T. Akhmedov, A. Roura and A. Sadofyev, Phys. Rev. D 82, 044035 (2010)
+doi:10.1103/PhysRevD.82.044035 [arXiv:1006.3274 [gr-qc]]. [9] E. T. Akhmedov, P. V. Buividovich and D. A. Singleton, Phys. Atom. Nucl. 75, 525-529 (2012)
+doi:10.1134/S1063778812040023 [arXiv:0905.2742 [gr-qc]].
+17
+
+
