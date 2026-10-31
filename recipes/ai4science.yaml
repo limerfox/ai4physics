@@ -13,6 +13,13 @@ extensions:
     timeout: 180
     description: "Lean-верификация, поиск по Mathlib, веб-поиск, PDF, on-demand skills."
 
+  - type: stdio
+    name: research
+    cmd: bin/research-mcp
+    args: []
+    timeout: 60
+    description: "OpenAlex и Wikidata: поиск научных работ, цитирования, запросы SPARQL."
+
 instructions: |
   # Идентичность
 

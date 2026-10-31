@@ -92,7 +92,7 @@ extensions:
     name: developer          # bash + text_editor + todo
   - type: stdio
     name: ai4science            # наш MCP
-    cmd: bin/ai4science-mcp
+    cmd: bin/research-mcp
     timeout: 180
 instructions: |
   # Идентичность
