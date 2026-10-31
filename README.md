@@ -1,5 +1,7 @@
 # AI4Science
 
+## Все домашние проекты лежат в директории cnt.
+
 ![CI](https://github.com/andkhalov/AI4Science/actions/workflows/test.yml/badge.svg)
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-brightgreen)
 ![macOS](https://img.shields.io/badge/macOS-supported-brightgreen)
