@@ -1,5 +1,6 @@
 .env
 .venv/
+.venv-w5/
 __pycache__/
 *.pyc
 *.pyo
@@ -32,3 +33,12 @@ report/*.log
 report/*.out
 report/*.toc
 report/*.pdf
+
+# Seminar files
+week_3/
+week_4/
+week_5/
+
+# Projects proba
+physics3_proba/
+physics4_proba/
