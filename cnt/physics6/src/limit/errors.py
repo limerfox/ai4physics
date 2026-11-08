@@ -2,7 +2,7 @@
 import cmath
 import math
 import numpy as np
-from .modes import minkowski_mode
+from .modes import minkowski_mode_mpmath
 
 def phase_align(values, reference_ratio):
     """Удалите только глобальную фазу величины reference_ratio, не затрагивая её модуль."""
@@ -28,7 +28,7 @@ def error_curve(mode_function, H_values, m, k, t_values, x=0.0, t_ref=0.0, **kwa
     dps = int(kwargs.pop("dps", 50))
     results = []
     with mp.workdps(dps):
-        phiM_ref = mp.e**(-1j*mp.sqrt(m*m+k*k)*t_ref + 1j*k*x) / mp.sqrt(2*mp.sqrt(m*m+k*k))
+        phiM_ref = minkowski_mode_mpmath(m, k, t_ref, x)
         for H in H_values:
             phi_ref = mode_function(H, m, k, t_ref, x, **kwargs)
             ratio_ref = mp.mpc(phi_ref) / phiM_ref
@@ -36,8 +36,7 @@ def error_curve(mode_function, H_values, m, k, t_values, x=0.0, t_ref=0.0, **kwa
             errs = []
             for t in t_values:
                 phi = mp.mpc(mode_function(H, m, k, t, x, **kwargs)) * phase_factor
-                E = mp.sqrt(m*m+k*k)
-                phiM = mp.e**(-1j*E*t + 1j*k*x) / mp.sqrt(2*E)
+                phiM = minkowski_mode_mpmath(m, k, t, x)
                 errs.append(abs(phi/phiM - 1))
             results.append(float(max(errs)))
     return results
