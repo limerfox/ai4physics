@@ -1,5 +1,0 @@
-# E. Akhmedov, 2013
-
-E. T. Akhmedov, "Lecture notes on interacting quantum fields in de Sitter space," 	arXiv:1309.2557, 2013.
-
-Краткое описание: We discuss peculiarities of quantum fields in de Sitter space on the example of the self-interacting massive real scalar, minimally coupled to the gravity background. Non-conformal quantum field theories in de Sitter space show very special infrared behavior, which is not shared by quantum fields neither in flat nor in anti-de-Sitter space: in de Sitter space loops are not suppressed in comparison with tree level contributions because there are strong infrared corrections. That is true even for massive fields. Our main concern is the interrelation between these infrared effects, the invariance of the quantum field theory under the de Sitter isometry and the (in)stability of de Sitter invariant states (and of dS space itself) under nonsymmetric perturbations.
