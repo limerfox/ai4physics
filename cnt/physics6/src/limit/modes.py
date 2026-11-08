@@ -20,10 +20,10 @@ import mpmath as mp
 def minkowski_mode_mpmath(m: float, k: float, t: float, x: float = 0.0):
     E = mp.sqrt(m*m+k*k)
     # Верное выражение:
-    phiM = mp.e**(-1j*E*t + 1j*k*x) / mp.sqrt(2*E)
+    # phiM = mp.e**(-1j*E*t + 1j*k*x) / mp.sqrt(2*E)
 
     # Выражение с ошибкой:
-    # phiM = mp.e**(-1j*E*t + 1j*k*x) / mp.sqrt(E)
+    phiM = mp.e**(-1j*E*t + 1j*k*x) / mp.sqrt(E)
     return phiM
 
 def desitter_mode_mpmath(H, m, k, t, x=0.0, dps=80):
