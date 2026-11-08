@@ -1,15 +1,13 @@
-"""Mode functions for a minimally coupled massive scalar in 4D de Sitter.
+"""Функции мод для минимально связанного массивного скалярного поля в 4-мерном пространстве де Ситтера.
 
-Convention:
- ds^2 = dt^2 - exp(2 H t) d x^2,
- eta = -exp(-Ht)/H,
- nu^2 = 9/4 - m^2/H^2.
+Принятые обозначения:
+ds^2 = dt^2 - exp(2 H t) d x^2,
+eta = -exp(-Ht)/H,
+nu^2 = 9/4 - m^2/H^2.
 
-The Bunch-Davies mode is
- u_k(eta) = (sqrt(pi)/2) H (-eta)^(3/2)
-            exp[i pi (nu/2 + 1/4)] H^{(1)}_nu(-k eta).
-The overall H-dependent phase is not physically relevant for the
-phase-aligned comparison; the implementation keeps this convention.
+Мода Банча-Дэвиса имеет вид:
+u_k(eta) = (sqrt(pi)/2) H (-eta)^(3/2) exp[i pi (nu/2 + 1/4)] H^{(1)}_nu(-k eta).
+Общий фазовый множитель, зависящий от H, не имеет физического значения при сравнении величин с согласованными фазами; в данной реализации используется именно это соглашение.
 """
 import cmath
 import math
@@ -30,14 +28,15 @@ def desitter_mode_mpmath(H, m, k, t, x=0.0, dps=80):
         return value * mp.e**(1j*km*xm)
 
 def desitter_mode_float64(H, m, k, t, x=0.0):
-    """Low-precision comparator rounded to Python complex (binary64).
+    """
+    Реализация с пониженной точностью, приводящая результат к типу Python complex (binary64). 
 
-    SciPy's standard Hankel ufunc does not accept the purely imaginary
-    order nu that occurs in the small-H massive-field regime. Therefore
-    this implementation evaluates the special function at 17 decimal
-    digits with mpmath and rounds the result to Python complex/binary64.
-    It is a practical low-precision proxy, not a native binary64 Hankel
-    implementation; the README documents this limitation explicitly.
+    Стандартная универсальная функция (ufunc) для вычисления функций Ханкеля в библиотеке SciPy
+    не поддерживает чисто мнимые значения порядка $\nu$, которые возникают в режиме малых $H$
+    для массивных полей. В связи с этим данная реализация вычисляет специальную функцию
+    с точностью до 17 десятичных знаков с помощью библиотеки mpmath, а затем округляет результат
+    до типа Python complex (binary64). Это лишь практический суррогат с пониженной точностью,
+    а не полноценная реализация функций Ханкеля для формата binary64.
     """
     value = desitter_mode_mpmath(H, m, k, t, x, dps=17)
     return complex(value)
