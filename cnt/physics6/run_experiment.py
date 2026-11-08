@@ -47,10 +47,6 @@ def main():
         failed = sum(st != "ok" for st in statuses)
         print(f"Finished: {len(rows)} runs; failed points: {failed}")
         print(f"Results: {Path(args.output).resolve()}")
-        print("Estimated p values (first 12 rows):")
-        for item in (summary.iloc[:12]).itertuples():
-            print(f"  {item['method']:10s} m={item['m']:g} k={item['k']:g} "
-                f"p={item['p_estimate']:.5g} fit_RMSE={item['log_fit_rmse']:.3g}")
 
 if __name__ == "__main__":
     main()
