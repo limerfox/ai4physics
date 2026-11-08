@@ -1,1 +1,0 @@
-Запуск python checks/check_quick.py --output results отработал корректно
