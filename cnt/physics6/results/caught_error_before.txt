@@ -1,0 +1,14 @@
+Пойманная ошибка при запуске python checks/check_quick.py --output results
+
+Traceback (most recent call last):
+  File "C:\Users\ForcePC\source\ai\ai4physics\cnt\physics6\checks\check_quick.py", line 40, in <modu
+le>
+    check_quick()
+  File "C:\Users\ForcePC\source\ai\ai4physics\cnt\physics6\checks\check_quick.py", line 36, in check
+_quick
+    test_error_monotonically_decrease(result)
+  File "C:\Users\ForcePC\source\ai\ai4physics\cnt\physics6\checks\checks_function\test_error_monoton
+ically_decrease.py", line 9, in test_error_monotonically_decrease
+    assert points[i-1].max_relative_error > points[i].max_relative_error * (1.0 + rel_slack), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: error did not decrease: err(H=0.1)=2.410e-01, err(H=0.03)=2.788e-01
