@@ -21,6 +21,7 @@
 | 1 | 2026-11-08 | я | Lean: `theorem rindler_geodesic_equations` — из `E = ρ²·τ̇` и `-ρ²·τ̇² + ρ̇² = -1` вывод `ρ̇² = E²/ρ² - 1` через `field_simp` + `ring_nf` + `linarith` | OFFLINE: SciLib endpoint unreachable (https://scilibai.ru/grag) | повторить: endpoint может восстановиться |
 | 2 | 2026-11-08 | я | Упростил: алгебраическая версия без `DifferentiableOn`/`deriv`, только `ℝ`-переменные `ρ τ E ρ' τ'`, доказательство через `field_simp` + `ring_nf` + `linarith` | OFFLINE: SciLib endpoint unreachable (https://scilibai.ru/grag) | повторить: endpoint может восстановиться |
 | 3 | 2026-11-08 | я | Третья попытка: тот же код, compact-формат | OFFLINE: SciLib endpoint unreachable (https://scilibai.ru/grag) | правило трёх попыток: endpoint недоступен, код готов к проверке при восстановлении |
+| 4 | 2026-11-16 | я | Тот же код: `field_simp` + `ring_nf` + `linarith` | OK: Lean 4 code compiles (Mathlib imported, 563 ms) | закрыта |
 
 ## Журнал попыток G2
 

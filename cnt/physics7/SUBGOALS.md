@@ -9,7 +9,7 @@
 | id | под-цель (утверждение) | родитель | вид связи | верификатор | команда проверки | статус |
 |---|---|---|---|---|---|---|
 | G0 | времениподобная геодезическая достигает горизонта за конечное собственное время `s_0 = E - \sqrt{E^2 - \rho_0^2}` и бесконечное координатное время `\tau \to \inf` | — | — | Lean (сборка G1–G4) | `lake env lean Horizon.lean`, `#print axioms` | открыта |
-| G1 | из уравнений геодезической Риндлера следуют `E = \rho^2 \dot{\tau}` и `\dot{\rho}^2 = \frac{E^2}{\rho^2} - 1` | G0 | горизонталь | Lean, `deriv`, `linear_combination` | `lake env lean Geodesic.lean` | открыта |
+| G1 | из уравнений геодезической Риндлера следуют `E = \rho^2 \dot{\tau}` и `\dot{\rho}^2 = \frac{E^2}{\rho^2} - 1` | G0 | горизонталь | Lean, `deriv`, `linear_combination` | `lake env lean Geodesic.lean` | закрыта |
 | G2 | интеграл собственного времени `\int_0^{\rho_0} \frac{\rho d\rho}{\sqrt{E^2 - \rho^2}} = E - \sqrt{E^2 - \rho_0^2}` | G0 | горизонталь | Lean, `intervalIntegral.integral_deriv_eq_sub` | `lake env lean Horizon.lean` | открыта |
 | G3 | интеграл координатного времени расходится `\int_0^{\rho_0} \frac{d\rho}{\rho \sqrt{E^2 - \rho^2}} \to \infty` | G0 | горизонталь | Lean, сравнение с `\int_{\eps}^{\rho_0} \frac{c d \rho}{\rho}` `Asymptotics.IsTheta` | `lake env lean Horizon.lean` | открыта |
 | G4 | из G1, G2 и G3 следует G0 | G1, G2, G3 | вертикаль: сборка | Lean, подстановка G1 в G2/G3 | `lake env lean Horizon.lean` | открыта |
